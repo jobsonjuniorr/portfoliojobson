@@ -341,46 +341,45 @@ span{
     align-items: center;
     gap: 2rem;
 }
-.service-box{
+.service-box {
     background-color: var(--main-color);
-    height: 450px;
-    border-radius: 3rem;
+    height: 380px;
+    border-radius: 2rem;
     cursor: pointer;
     transition: 0.3s ease;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-
-.service-box:hover{
+.service-box:hover {
     background-color: transparent;
     color: var(--text-color);
-    transform: scale(1.03);
     border: 1px solid var(--main-color);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
-
-.service-box .service-info{
+.service-box .service-info {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    max-width: 450px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 2rem;
-    text-indent: 1rem;
-    word-wrap: break-word;
+    padding: 2rem 1.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 1rem;
+}
+.service-info h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: left;
 }
 
-.service-info h4{
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-top: 1rem;
-}
-.service-info p{
-    font-size: 1.5rem;
+.service-info p {
+    font-size: 1.3rem;
     font-weight: 400;
-    max-height: 200px;
-    margin: auto;
-    margin-top: 0.5rem;
-    line-height: 1.4;
-    padding: 1rem; /* Adiciona preenchimento interno */
+    color: var(--text-color);
+    line-height: 1.8;
+    max-width: 100%;
 }
 @media screen and (max-width:991px){
     section{
